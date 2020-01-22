@@ -1,0 +1,25 @@
+Write a Python 3 program that takes 2 arguments:
+
+The first argument is the path to a directory that contains INI files describing features of different breeds of cats,
+where each INI files contains one section that is the name of the breed, and that section contains key-value pairs,
+where each key is the name of a feature of that breed, and the value description of that feature.
+
+The second argument is the name of one of these features.
+
+The program must print the description of the given feature for each breed, in the format of "<Breed Name>: <Feature Description>".
+
+
+For example, executing "your_program.py ./example hairLength" should print:
+
+Russian Blue: short
+Persian: long
+
+
+The INI files need not contain all of the feature descriptions. For example, in the above example,
+the output does not contain a line for the Siamese breed because that INI file does not contain a "hairLength" feature.
+
+
+You may use the example directory provided to test your program, but you should also create your own files to test against as well.
+Bundle your test files with your program when delivering it.
+
+Ideally, your program can gracefully handle bad input, such as invalid INI files in the directory.
